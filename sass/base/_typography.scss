@@ -1,0 +1,6 @@
+@import "compass/css3";
+ 
+@include font-face("Proxima Nova Reg", font-files("ProximaNova-Reg-webfont.ttf", "ProximaNova-Reg-webfont.eot", "ProximaNova-Reg-webfont.woff", "ProximaNova-Reg-webfont.svg"));
+@include font-face("Proxima Nova Sbold", font-files("ProximaNova-Sbold-webfont.ttf", "ProximaNova-Sbold-webfont.eot", "ProximaNova-Sbold-webfont.woff", "ProximaNova-Sbold-webfont.svg"));
+
+$font-stack: "Proxima Nova Reg", Helvetica, sans-serif;
