@@ -1,0 +1,37 @@
+#talks {
+	@include pad-bottom;
+	.time {
+		background: $lightgray;
+		@include round-corners(5px);
+		font: normal 100% $font-stack-sbold;
+		font-size: .8125em; /* 13px / 16px */
+		padding: 10px 0;
+		text-align: center;
+		width: 75px;
+	}
+
+	ul li {
+		border-left: 2px solid $lightgray;
+		margin-left: 37px;
+	 	
+		ul {		
+			li {
+				border: none;
+				margin-left: -37px;
+				padding-left: 100px;
+				height: 100%;
+			
+				a {
+					display: block;
+				}
+			}
+			li.talk-detail {
+				height: 65px;
+				margin-top: -37px;
+			}
+		}		
+	}
+	li.last {
+		border: none;
+	}
+}

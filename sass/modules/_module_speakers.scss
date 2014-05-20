@@ -1,0 +1,31 @@
+.section--speakers {	
+	padding: $components;
+	
+	.speaker-card {
+		background: $mediumgreen;
+		color: $white;
+		@include float-left;
+		width: 24.1%;
+		
+		ul {
+			margin-bottom: 20px;
+		}
+		
+		.speaker-info {
+			padding: 4%;
+		}
+		
+		.btn {
+			display: block;
+			text-align: center;
+			span {
+				border-right: 2px solid $mediumgreen;
+				@include float-left;
+				padding: 8px 18px 8px 0;
+				margin-top: -8px;
+				height: 100%;
+			} 
+		}
+	}
+	
+}

@@ -1,0 +1,41 @@
+/* Hero */
+#hero {
+	color: $white; 
+	position: relative;
+	a {
+		color: $white;
+		text-decoration: underline;
+	}
+}
+#info {
+	@include breakpoint($break3) {
+		top: 50%;
+	}
+	position: absolute;
+	top: 55%;
+	width: 95%;
+	.info-details {
+		@include pie-clearfix;
+		@include float-left;
+		width: 72%;		
+		.avatar img {
+			height: 90px;
+			margin-right: 20px;
+			width: 90px;
+		}
+	}
+	ul {
+		border-left: 2px solid rgba(255, 255, 255, 0.2); ;
+		@include float-right;
+		padding: 15px 0 15px 3%;
+		width: 24%;
+		li {
+			padding: 3px;
+		}
+		.attendees {
+			background: url(../images/attendees.svg) no-repeat;
+			margin-top: 8px;
+			padding-left: 40px;
+		}
+	}
+}

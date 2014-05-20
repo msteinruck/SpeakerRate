@@ -1,0 +1,12 @@
+#social {
+	@include pie-clearfix;
+	padding-top: 30px;
+	
+	#recommendations {
+		@include float-left;
+	}
+	
+	#tweet-like-share {
+		@include float-right;
+	}
+}

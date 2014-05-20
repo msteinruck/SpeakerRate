@@ -1,7 +1,67 @@
-#container, #main, #hero {
+/* Section Wrappers */
+.section {
 	width: 100%;
+	padding: $components;
+}
+.wrapper {
+	@include pie-clearfix;
+	margin: 0 auto;
+	width: 95%;
 }
 
-#hero {
-	cover: cover;
+/* Content Columns */
+.col1 {
+	@include float-left;
+	width: 65%;
+}
+
+.col2 {
+	@include float-left;
+	padding-left: 10%;
+	width: 25%;
+}
+
+/* Column spans with margin */
+.span2 {
+	margin: 0 .5603448% 0 1.1206897%;
+}
+
+.span3 {
+	margin: 0 1.1206897% 0 .5603448%;
+}
+
+/* White Box Spans */
+.span-narrow {
+	background: $white;
+	margin-bottom: 30px;
+	padding: 2%; 
+	width: 38.4310345%; /* 469px */
+	@include breakpoint($break4) {
+		width: 100%;
+	}
+}
+
+.span-wide {
+	@include clearfix;
+	background: $white;
+	padding: 0; 
+	margin-bottom: 30px;
+	width: 55.4655172%; /* 655px */
+	@include breakpoint($break4) {
+		width: 100%;
+	}
+}
+
+
+/* Miscellaneous structural elements */
+.center-box {
+	border-bottom: 2px solid $lightgray;
+	display: inline-block;
+	padding: $components;
+	text-align: center;
+	width: 100%;
+	.btn { 
+		display: inline-block;
+
+	}
 }

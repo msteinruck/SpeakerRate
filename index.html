@@ -3,19 +3,18 @@
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
 <!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title></title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+ <head>
+     <meta charset="utf-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <title>SpeakerRate Parts Kit</title>
+     <meta name="description" content="">
+     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+     <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
 
-        <link href="stylesheets/main.css" media="screen, projection" rel="stylesheet" type="text/css" />
-        <script src="js/vendor/modernizr-2.6.2.min.js"></script>
-    </head>
-    <body>	
+     <link href="stylesheets/base.css" media="screen, projection" rel="stylesheet" type="text/css" />
+ </head>
+ <body>	
 	<div id="fb-root"></div>
 	<script>(function(d, s, id) {
 	  var js, fjs = d.getElementsByTagName(s)[0];
@@ -24,255 +23,299 @@
 	  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.0";
 	  fjs.parentNode.insertBefore(js, fjs);
 	}(document, 'script', 'facebook-jssdk'));</script>
-		<div id="container">
+	<div id="container">
 			<header>
 				<div id="header">
-					<a href="/" class="logo">SpeakerRate</a>
-					<div id="reg-search">
-						<ul class="reg">
-							<li class="join"><a href="/join">Join</a></li>
-							<li class="sign-in"><a href="/sign-in">Sign In</a></li>
-						</ul>
-						<form id="search" action="demo_form.asp">
-						  <input type="search" name="googlesearch"><br>
-						  <input type="submit">
-						</form>
-					</div>
-					<nav>
-						<ul id="nav">
-							<li class="nav-speakers"><a href="/speakers">Speakers</a></li>
-							<li class="nav-events"><a href="/events">Events</a></li>
-							<li class="nav-talks"><a href="/talks">Talks</a></li>
-							<li class="nav-add"><a href="/add">Add</a>
-								<ul class="add-nav">
-									<li class="add-talk"><a href="/talks/add-talk">Talk</a></li>
-									<li class="add-event"><a href="/events/add-event">Event</a></li>
+					<div class="wrapper">
+						<a href="/" class="logo">SpeakerRate</a>
+						<div id="header-wrap">
+							<nav>
+								<ul id="nav">
+									<li class="nav-speakers"><a href="/speakers">Speakers</a></li>
+									<li class="nav-events"><a href="/events">Events</a></li>
+									<li class="nav-talks"><a href="/talks">Talks</a></li>
+									<li class="nav-add"><a href="/add">Add</a>
+										<ul class="add-nav">
+											<li class="add-talk"><a href="/talks/add-talk">Talk</a></li>
+											<li class="add-event"><a href="/events/add-event">Event</a></li>
+										</ul>
+									</li>
+								</ul>	
+								<ul id="hamburger-menu">
+									<li class="menu"><a href="">Menu<span></span></a></li>
 								</ul>
-							</li>
-						</ul>	
-					</nav>
+							</nav>
+							<div id="reg-search">
+								<ul class="reg">
+									<li class="join"><a href="/join">Join</a></li>
+									<li class="sign-in"><a href="/sign-in">Sign In</a></li>
+								</ul>
+								<form id="search" action="demo_form.asp">
+								  <input type="search" name="googlesearch">
+								  <input type="submit" value="" class="btn-search">
+								</form>
+							</div>
+						</div>
+					</div>
 				</div>
-			</header>
-			
-		<main id="content" role="main">
+			</header>		
+
 			<div id="hero">
-				<div id="info">
-					<a href="#" class="avatar"></a>
-					<h1>HTML 5 game development with Javascript &amp; Canvas</h1>
-					<h6>A talk by <a href="#">Dan Tello</a></h6>
-					
-					<ul>
-						<li class="event-name"><a href="#">Converge RVA 2014</a></li>
-						<li>October 12, 2014</li>
-						<li>The Hippodrome Theatre</li>
-						<li>Richmond, VA 23219</li>
-						<li class="attendees">100-250 attendees</li>
-					</ul>
-				</div>
+				<div class="wrapper">
+					<div id="info">
+						<div class="info-details">
+							<a href="#" class="avatar"><img src="images/avatar-speaker.jpg" alt="Speaker Avatar" /></a>
+							<h1>HTML 5 game development with Javascript &amp; Canvas</h1>
+							<h6>A talk by <a href="#">Dan Tello</a></h6>
+						</div>
+						<ul>
+							<li class="event-name"><a href="#">Converge RVA 2014</a></li>
+							<li>October 12, 2014</li>
+							<li>The Hippodrome Theatre</li>
+							<li>Richmond, VA 23219</li>
+							<li class="attendees">100-250 attendees</li>
+						</ul>
+					</div>
+				</div>	
+				<img src="images/hero-default.jpg" class="image-fluid" alt="SpeakerRate Hero" />
 			</div>
-			
-			<div id="priority">
-				<div id="about">
-					<h5>About the Talk</h4>
-					<p>Integer legentibus erat a ante historiarum dapibus. Idque Caesaris facere voluntate liceret: sese habere. Quisque placerat facilisis egesttas 	cillum dolore. Quam diu etiam furor iste tuus nos eludet? Idque Caesaris facere voluntate liceret: sese habere.
-					</p>
-					<p>
-					Tityre, tu patulae recubans sub tegmine fagi  dolor. Unam incolunt Belgae, aliam Aquitani, tertiam. Morbi fringilla convallis sapien, id pulvinar odio volutpat.
-					</p>
-					<ul class="tags">
-						<li><a href="#">html</a></li>
-						<li><a href="#">javascript</a></li>
-						<li><a href="#">canvas</a></li>
-						<li><a href="#">games</a></li>
-					</ul>
-					<a href="#" class="outline btn-gray btn-medium">Recommend This Talk</a>
+		<main role="main">
+			<div class="section bg-gray">
+				<div class="wrapper">
+					<div class="about span-narrow">
+						<h5>About the Talk</h5>
+						<p>Integer legentibus erat a ante historiarum dapibus. Idque Caesaris facere voluntate liceret: sese habere. Quisque placerat facilisis egesttas 	cillum dolore. Quam diu etiam furor iste tuus nos eludet? Idque Caesaris facere voluntate liceret: sese habere.
+						</p>
+						<p>
+						Tityre, tu patulae recubans sub tegmine fagi  dolor. Unam incolunt Belgae, aliam Aquitani, tertiam. Morbi fringilla convallis sapien, id pulvinar odio volutpat.
+						</p>
+						<ul class="tags">
+							<li><a href="#">html</a></li>
+							<li><a href="#">javascript</a></li>
+							<li><a href="#">canvas</a></li>
+							<li><a href="#">games</a></li>
+						</ul>
+						<a href="#" class="btn btn-gray outline-gray btn-medium">Recommend This Talk</a>
+					</div>
+					<div class="rate span-wide">
+						<div id="avg-rating"></div>
+						<div id="rate-talk"><span class="rate-prompt">Were you at this talk?</span><a href="#" class="btn btn-mediumgreen btn-lrg">Rate This Talk</a></div>
+					</div>
 				</div>
-				<div id="rate">
-					<div id="avg-rating"><img src="images/rating.jpg"></div>
-					<div id="rate-talk">Were you at this talk? <a href="#" class="btn-green btn-lrg">Rate This Talk</a></div>
-				</div>
-				<div id="social">
-					<div id="recommendations">This talk has received <strong>872 recommendations</strong></div>
-					<div id="tweet-like-share">
-						<div class="tweet"><a href="https://twitter.com/share" class="twitter-share-button" data-lang="en">Tweet</a></div>
-						<div class="fb-like" data-href="https://www.facebook.com/speakerrate" data-layout="button_count" data-action="like" data-show-faces="false" data-share="true"></div>
+				<div class="wrapper">
+					<div id="social">
+						<div id="recommendations">This talk has received <strong>872 recommendations</strong></div>
+						<div id="tweet-like-share">
+							<div class="tweet"><a href="https://twitter.com/share" class="twitter-share-button" data-lang="en">Tweet</a></div>
+							<div class="fb-like" data-href="https://www.facebook.com/speakerrate" data-layout="button_count" data-action="like" data-show-faces="false" data-share="true"></div>
+						</div>
 					</div>
 				</div>	
 			</div>
 			
-			<div id="speakers">
-				<h2>Speakers</h2>
-				<div class="speaker-card">
-					<img src="http://placehold.it/280x230">
-					<ul>
-						<li class="name">Dave DeSandro</li>
-						<li class="company">Twitter</li>
-					</ul>
-					<a href="#" class="btn-medium"><span>127</span> Unrecommend</a>
-				</div>
+			<div class="section section--speakers">
+				<div class="wrapper">
+					<h2>Speakers</h2>
+					<div class="speaker-card span1">
+						<img src="images/speaker-pic.jpg" class="image-fluid" />
+							<div class="speaker-info">
+								<ul>
+									<li class="name">Dave DeSandro</li>
+									<li class="company">Twitter</li>
+								</ul>
+								<a href="#" class="btn btn-medium btn-darkgreen"><span>127</span> Recommend</a>
+						</div>
+					</div>
 				
-				<div class="speaker-card">
-					<img src="http://placehold.it/280x230">
-					<ul>
-						<li class="name">Dave DeSandro</li>
-						<li class="company">Twitter</li>
-					</ul>
-					<a href="#" class="btn-medium"><span>127</span> Unrecommend</a>
-				</div>
+					<div class="speaker-card span2">
+						<img src="images/speaker-pic.jpg" class="image-fluid" />
+							<div class="speaker-info">
+								<ul>
+									<li class="name">Dave DeSandro</li>
+									<li class="company">Twitter</li>
+								</ul>
+								<a href="#" class="btn btn-medium btn-darkgreen"><span>127</span> Recommend</a>
+						</div>
+					</div>
 				
-				<div class="speaker-card">
-					<img src="http://placehold.it/280x230">
-					<ul>
-						<li class="name">Dave DeSandro</li>
-						<li class="company">Twitter</li>
-					</ul>
-					<a href="#" class="btn-medium"><span>127</span> Unrecommend</a>
-				</div>
+					<div class="speaker-card span3">
+						<img src="images/speaker-pic.jpg" class="image-fluid" />
+							<div class="speaker-info">
+								<ul>
+									<li class="name">Dave DeSandro</li>
+									<li class="company">Twitter</li>
+								</ul>
+								<a href="#" class="btn btn-medium btn-lightgreen"><span>127</span> Unrecommend</a>
+						</div>
+					</div>
 				
-				<div class="speaker-card">
-					<img src="http://placehold.it/280x230">
-					<ul>
-						<li class="name">Dave DeSandro</li>
-						<li class="company">Twitter</li>
-					</ul>
-					<a href="#" class="btn-medium"><span>127</span> Unrecommend</a>
+					<div class="speaker-card span4">
+						<img src="images/speaker-pic.jpg" class="image-fluid" />
+							<div class="speaker-info">
+								<ul>
+									<li class="name">Dave DeSandro</li>
+									<li class="company">Twitter</li>
+								</ul>
+								<a href="#" class="btn btn-medium btn-lightgreen"><span>127</span> Unrecommend</a>
+						</div>
+					</div>
+						<div class="center-box">
+							<a href="#" class="btn btn-gray outline-gray btn-medium">Load All Speakers</a>
+						</div>
 				</div>
 			</div>
 			
-			<div id="flex">
-				<div id="col1">
-					<div id="talks">
-						<h2>Talks</h2>
-						<ul>
-							<li>
-								<ul>
-									<li class="time">9:00 AM</li>
-									<li><a href="#">Responsive Web Designer Destroyed My Process</a>Ben Callahan</li>
-								</ul>
-							</li>
-							<li>
-								<ul>
-									<li class="time">9:50 AM</li>
-									<li><a href="#">Eve Tracking &amp; Usability</a>JD Graffam</li>
-								</ul>
-							</li>
-							<li>
-								<ul>
-									<li class="time">10:15 AM</li>
-									<li><a href="#">Foundation + Responsive Web Design</a>Ghalda Zahran</li>
-								</ul>
-							</li>
-							<li>
-								<ul>
-									<li class="time">11:15 AM</li>
-									<li><a href="#">HTML 5 game develompent with Javascript and Canvas</a>Dan Tello</li>
-								</ul>
-							</li>
-						</ul>
-						<a href="#" class="outline btn-medium">Load All Talks</a>
-					</div>
+			<div class="section section--content">
+				<div class="wrapper">
+					<div class="col1">
+						<div id="talks" class="pad-bottom">
+							<h2>Talks</h2>
+							<ul>
+								<li>
+									<ul>
+										<li class="time">9:00 AM</li>
+										<li class="talk-detail"><a href="#">Responsive Web Designer Destroyed My Process</a>Ben Callahan</li>
+									</ul>
+								</li>
+								<li>
+									<ul>
+										<li class="time">9:50 AM</li>
+										<li class="talk-detail"><a href="#">Eve Tracking &amp; Usability</a>JD Graffam</li>
+									</ul>
+								</li>
+								<li>
+									<ul>
+										<li class="time">10:15 AM</li>
+										<li class="talk-detail"><a href="#">Foundation + Responsive Web Design</a>Ghalda Zahran</li>
+									</ul>
+								</li>
+								<li class="last">
+									<ul>
+										<li class="time">11:15 AM</li>
+										<li class="talk-detail"><a href="#">HTML 5 game develompent with Javascript and Canvas</a>Dan Tello</li>
+									</ul>
+								</li>
+							</ul>
+							<a href="#" class="btn btn-gray outline-gray btn-medium">Load All Talks</a>
+						</div>
 					
-					<div id="past-talks">
-						<h2>Past Talks</h2>
-						<ul>
-							<li>
-								<ul>
-									<li><img src="http://placehold.it/75x75"></li>
-									<li><span>4.38</span><a href="#">HTML 5 game development with Javascript</a>Oct. 12 2013, <a href="#">ConvergeRVA 2013</a></li>
-								</ul>
-							</li>
-							<li>
-								<ul>
-									<li><img src="http://placehold.it/75x75"></li>
-									<li><span>3.25</span><a href="#">Micro-Donations</a>Oct. 12 2013, <a href="#">Viget Labshares</a></li>
-								</ul>
-							</li>
-							<li>
-								<ul>
-									<li><img src="http://placehold.it/75x75"></li>
-									<li><span>2.38</span><a href="#">Something else with Javascript and Canvas</a>Oct. 12 2013, <a href="#">ConvergeRVA 2013</a></li>
-								</ul>
-							</li>
-							<li>
-								<ul>
-									<li><img src="http://placehold.it/75x75"></li>
-									<li><span>1.23</span><a href="#">Another super interesting talk</a>Oct. 12 2013, <a href="#">ConvergeRVA 2013</a></li>
-								</ul>
-							</li>
-						</ul>
-						<p class="missing">Are we missing one of Dan's talks? <a href="#"><strong>Please add it.</strong></a></p>
-					</div>
+						<div id="past-talks" class="pad-bottom">
+							<h2>Past Talks</h2>
+							<ul>
+								<li><img src="http://placehold.it/75x75">
+									<ul>
+										<li><span class="rating rating4">4.38</span></li>
+										<li><a href="#">HTML 5 game development with Javascript</a></li>
+										<li>Oct. 12 2013, <a href="#">ConvergeRVA 2013</a></li>
+									</ul>
+								</li>
+								<li><img src="http://placehold.it/75x75">
+									<ul>
+										<li><span class="rating rating3">3.25</span></li>
+										<li><a href="#">Micro-Donations</a></li>
+										<li>Oct. 12 2013, <a href="#">Viget Labshares</a></li>
+									</ul>
+								</li>
+								<li><img src="http://placehold.it/75x75">
+									<ul>
+										<li><span class="rating rating2">2.38</span>
+										<li><a href="#">Something else with Javascript and Canvas</a></li>
+										<li>Oct. 12 2013, <a href="#">ConvergeRVA 2013</a></li>
+									</ul>
+								</li>
+								<li><img src="http://placehold.it/75x75">
+									<ul>
+										<li><span class="rating rating1">1.23</span></li>
+										<li><a href="#">Another super interesting talk</a></li>
+										<li>Oct. 12 2013, <a href="#">ConvergeRVA 2013</a></li>
+									</ul>
+								</li>
+							</ul>
+							<p class="missing">Are we missing one of Dan's talks? <a href="#"><strong>Please add it.</strong></a></p>
+						</div>
 					
-					<div id="photos">
-						<div class="blue-box"><a href="#">View Photos</a></div>
-					</div>
+						<div id="photos" class="pad-bottom">
+							<a href=""><img src="http://placehold.it/150x150" class="image-fluid"></a>
+							<a href=""><img src="http://placehold.it/150x150" class="image-fluid"></a>
+							<a href=""><img src="http://placehold.it/150x150" class="image-fluid"></a>
+							<a href=""><img src="http://placehold.it/150x150" class="image-fluid"></a>
+							<a href=""><img src="http://placehold.it/150x150" class="image-fluid"></a>
+							<a href=""><img src="http://placehold.it/150x150" class="image-fluid"></a>
+							<a href=""><img src="http://placehold.it/150x150" class="image-fluid"></a>
+							<a href=""><img src="http://placehold.it/150x150" class="image-fluid"></a>
+							<a href=""><img src="http://placehold.it/150x150" class="image-fluid"></a>
+							<div class="blue-box"><a href="#">View Photos</a></div>
+						</div>
 					
-					<div id="slides">
-						<iframe src="http://www.slideshare.net/slideshow/embed_code/34257972" width="427" height="356" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px 1px 0; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe> <div style="margin-bottom:5px"> <strong> <a href="https://www.slideshare.net/TaherMestiri/quotes-said-for-a-good-reason" title="Quotes said for a good reason" target="_blank">Quotes said for a good reason</a> </strong> from <strong><a href="http://www.slideshare.net/TaherMestiri" target="_blank">Taher Mestiri</a></strong> </div>
+						<div id="slides">
+							<iframe src="http://www.slideshare.net/slideshow/embed_code/34257972" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" allowfullscreen> </iframe> <div style="margin-bottom:5px"> <strong> <a href="https://www.slideshare.net/TaherMestiri/quotes-said-for-a-good-reason" title="Quotes said for a good reason" target="_blank">Quotes said for a good reason</a> </strong> from <strong><a href="http://www.slideshare.net/TaherMestiri" target="_blank">Taher Mestiri</a></strong> </div>
 					</div>
 				</div>
-				<div id="col2">
-					<div class="sidebox red" id="testimonials">
-						<h3>Testimonials (#)</h3>
-						<p><a href="#">Brian Williams</a> said:</p>
-						<blockquote>"Dan is a great presenter who makes complicated Front-end Dev concepts easy to understand. He has the right mix of humor, facts, and a laid-back personality to keep you engaged in his talks."</blockquote>
-						<a href="outline btn-medium btn-white">More</a>
-						<a href="#">Add Your Own Testimonial</a>
-					</div>
+					<div class="col2">
+						<div class="sidebox bg-red" id="testimonials">
+							<h3>Testimonials (#)</h3>
+							<a href="#">Brian Williams</a> said:<br/>
+							<blockquote>"Dan is a great presenter who makes complicated Front-end Dev concepts easy to understand. He has the right mix of humor, facts, and a laid-back personality to keep you engaged in his talks."</blockquote>
+							<a href="" class="outline-white btn btn-medium">More</a>
+							<a href="#" class="add-testimonial">Add Your Own Testimonial</a>
+						</div>
 					
-					<div class="sidebox gray" id="about-speaker">
-						<h3>More About Dan</h3>
-						<ul>
-							<li>Front-end Developer at Viget</li>
-							<li>Lives near Washington D.C.</li>
-						</ul>
-						<h5>Dan Knows About</h5>
-						<ul class="tags">
-							<li><a href="#">html</a></li>
-							<li><a href="#">css</a></li>
-							<li><a href="#">javascript</a></li>
-							<li><a href="#">software</a></li>
-							<li><a href="#">development</a></li>
-							<li><a href="#">design</a></li>
-							<li><a href="#">bacon</a></li>
-							<li><a href="#">sandwiches</a></li>                 
-						</ul>
-						<h5>Connect with Dan</h5>
-						<ul>
-							<li><a href="#" class="linkedin">LinkedIn</a></li>
-							<li><a href="#" class="facebook">Facebook</a></li>
-							<li><a href="#" class="twitter">Twitter</a></li>
-						</ul>
-					</div>
+						<div class="sidebox bg-gray" id="about-speaker">
+							<h3>More About Dan</h3>
+							<ul>
+								<li>Front-end Developer at Viget</li>
+								<li>Lives near Washington D.C.</li>
+							</ul>
+							<h5>Dan Knows About</h5>
+							<ul class="tags">
+								<li><a href="#">html</a></li>
+								<li><a href="#">css</a></li>
+								<li><a href="#">javascript</a></li>
+								<li><a href="#">software</a></li>
+								<li><a href="#">development</a></li>
+								<li><a href="#">design</a></li>
+								<li><a href="#">bacon</a></li>
+								<li><a href="#">sandwiches</a></li>                 
+							</ul>
+							<h5>Connect with Dan</h5>
+							<ul class="social-icons">
+								<li><a href="#" class="linkedin">LinkedIn</a></li>
+								<li><a href="#" class="facebook">Facebook</a></li>
+								<li><a href="#" class="twitter">Twitter</a></li>
+							</ul>
+						</div>
 					
-					<div class="sidebox" id="organizers">
-						<h3>Organizers</h3>
-						<ul>
-							<li><img src="http://www.placehold.it/90x90" />Gene Crawford><span>Shop Talk Show</span></li>
-							<li><img src="http://www.placehold.it/90x90" />Gene Crawford><span>Shop Talk Show</span></li>
-							<li><img src="http://www.placehold.it/90x90" />Gene Crawford><span>Shop Talk Show</span></li>
-						</ul>
-					</div>
+						<div class="sidebox" id="organizers">
+							<h3>Organizers</h3>
+							<ul>
+								<li class="avatar"><img src="http://www.placehold.it/90x90" /><p>Gene Crawford<span>Shop Talk Show</span></p></li>
+								<li class="avatar"><img src="http://www.placehold.it/90x90" /><p>Gene Crawford<span>Shop Talk Show</span></p></li>
+								<li class="avatar"><img src="http://www.placehold.it/90x90" /><p>Gene Crawford<span>Shop Talk Show</span></p></li>
+							</ul>
+						</div>
 					
-					<div class="sidebox" id="other-talks">
-						<h3>Other Talks at {Event Name}</h3>
-						<ul>
-							<li><a href="#">Responsive Web Design Destroyed</a></li>
-							<li><a href="#">My Process</a></li>
-							<li><a href="#">Eye Tracking &amp; Usability</a></li>
-							<li><a href="#">GIT: The Right Story</a></li>
-							<li><a href="#">The State of Being a Maker</a></li>
-						</ul>
-						<a href="outline btn-medium btn-gray">More</a>	
+						<div class="sidebox" id="other-talks">
+							<h3>Other Talks at {Event Name}</h3>
+							<ul>
+								<li><a href="#">Responsive Web Design Destroyed</a></li>
+								<li><a href="#">My Process</a></li>
+								<li><a href="#">Eye Tracking &amp; Usability</a></li>
+								<li><a href="#">GIT: The Right Story</a></li>
+								<li><a href="#">The State of Being a Maker</a></li>
+							</ul>
+							<a href="" class="btn btn-gray outline-gray btn-medium">More</a>	
+						</div>
 					</div>
 				</div>
 			</div>
-			<div id="comments">
-			
+			<div class="section section--comments">
+				<div class="wrapper">
+				</div>
 			</div>
 		</main>
 		
 		<footer id="footer">
+			<div class="wrapper">
 			<ul id="footer-nav">
 				<li><a href="#">About</a></li>
 				<li><a href="#">FAQs</a></li>
@@ -285,15 +328,27 @@
 			</ul>
 			
 			<a href="#" class="pointless">Pointless Corp.</a>
-			<p>Copyright @copy;2014 SpeakerRate. All Rights Reserved.</p>
+			<p>Copyright &copy;2014 SpeakerRate. All Rights Reserved.</p>
+			</div>
 		</footer>
 		
-		</div>
+	</div>
+	
+	<div id='overlay'></div>
+	<div id='modal'>
+	    <div id='content'>No JavaScript Yet!</div>
+	    <a href='#' id='close'>close</a>
+	</div>
 
-        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
-        <script src="js/plugins.js"></script>
-        <script src="js/main.js"></script>
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+		<script src="js/jquery-1.11.1.min.js"></script>
+		<script src="js/jquery.fitvids.js"></script>
+		<script>
+		  $(document).ready(function(){
+		    $("#slides").fitVids();
+		  });
+		</script>
+		
 
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
         <script>

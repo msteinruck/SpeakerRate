@@ -1,0 +1,87 @@
+.sidebox {
+	@include pie-clearfix;
+	margin-bottom: 30px;
+	padding: 5%;
+	
+	blockquote {
+		line-height: 1.6em;
+		margin-bottom: 20px;
+	}
+	
+	ul {
+		margin-bottom: 15px;
+	}
+}
+
+/* Testimonials */
+#testimonials {
+	color: $white;
+	@include border-color($red);
+	a {
+		color: #fdc5a1;
+		text-decoration: underline;
+	}
+	a.btn {
+		color: $white;
+		text-decoration: none;
+	}
+	.add-testimonial {
+		display: block;
+		margin-top: 20px;
+	}
+}
+
+/* About Speaker */
+#about-speaker {
+	@include border-color($lightgray);
+	.social-icons {
+		li {
+			padding-right: 5px;
+			@include float-left;
+		}
+		a {
+			display: block;
+			text-indent: -9999px;
+			height: 35px;
+			width: 35px;
+		}
+		.linkedin {
+			background: url(../images/icon-linkedin.svg);
+		}
+		.facebook {
+			background: url(../images/icon-facebook.svg);
+		}
+		.twitter {
+			background: url(../images/icon-twitter.svg);
+		}
+	}
+}
+
+/* Talks and Organizers */
+#other-talks, #organizers {
+	@include border-color($lightgray);
+}
+
+#organizers {
+	li {
+		display: table;
+		@include float-left;
+		margin-bottom: 10px;
+		width: 100%;
+		
+		p {
+			display: table-cell;
+			line-height: 1.2em;
+			vertical-align: middle;
+			width: 75%;
+			
+			span {
+				color: $mediumgray;
+				display: block;
+				font-size: .825em; /* 16px /14px */
+			}
+		}
+		img { margin-right: 10px;}
+		
+	}
+}

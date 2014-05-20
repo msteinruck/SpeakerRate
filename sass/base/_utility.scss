@@ -1,0 +1,91 @@
+/* Fluid Images */
+.image-fluid {
+	display: block;
+	height: auto;
+	width: 100%;
+}
+
+/* Tags */
+.tags {
+	display: block;
+	margin-bottom: 15px;
+	@include float-left;
+	width: 100%;
+	li {
+		@include float-left;
+		margin-right: 5px;
+		margin-bottom: 13px;
+		
+		a {
+			background: $darkblue;
+			color: $white;
+			padding: 4px 8px;
+		}
+	}
+}
+
+/* Avatars */
+.avatar img {
+	@include border-radius-full;
+	@include float-left;
+}
+
+/* Block Backgrounds */
+.bg-gray { background: $lightgray; }
+.bg-red  { background: $red; }
+
+
+
+
+
+/* Overlay */
+#overlay {
+    position: fixed; 
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: $darkgreen;
+    opacity: 0.9;
+    filter: alpha(opacity=90);
+}
+#container {
+	-webkit-filter: blur(6px);
+	    -moz-filter: blur(6px);
+	    -o-filter: blur(6px);
+	    -ms-filter: blur(6px);
+	    filter: blur(6px);
+}
+#close {
+    position:absolute;
+    background:url(close.png) 0 0 no-repeat;
+    width:24px;
+    height:27px;
+    display:block;
+    text-indent:-9999px;
+    top:-7px;
+    right:-7px;
+}
+#modal {
+    position:absolute;
+    background:url(tint20.png) 0 0 repeat;
+    background:rgba(0,0,0,0.2);
+    border-radius:14px;
+    padding:8px;
+}
+
+#content {
+    border-radius:8px;
+    background:#fff;
+    padding:20px;
+}
+#close {
+    position:absolute;
+    background:url(close.png) 0 0 no-repeat;
+    width:24px;
+    height:27px;
+    display:block;
+    text-indent:-9999px;
+    top:-7px;
+    right:-7px;
+}

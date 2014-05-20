@@ -7,6 +7,8 @@ sass_dir = "sass"
 images_dir = "images"
 javascripts_dir = "javascripts"
 
+http_fonts_path "/Users/marksteinruck/speakerrate/fonts"
+
 # Breakpoint 
 require "breakpoint"
 

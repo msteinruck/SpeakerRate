@@ -1,0 +1,64 @@
+/* Breakpoints */
+$break1: max-width 1024px;
+$break2: max-width 1023px;
+$break3: 830px 1150px;
+$break4: 320px 829px;
+
+
+/* Global Padding */
+$components:  40px 0;
+
+/* Border Radius */
+$circle-border-radius: 45px;
+
+@mixin border-radius-full($radius: $circle-border-radius) {
+  -moz-border-radius: $radius;
+  -webkit-border-radius: $radius;
+  -ms-border-radius: $radius;
+  border-radius: $radius;
+}
+
+@mixin border-radius-left($radius: $circle-border-radius) {
+	-webkit-border-top-left-radius: $radius;
+	-webkit-border-bottom-left-radius: $radius;
+	-moz-border-radius-topleft: $radius;
+	-moz-border-radius-bottomleft: $radius;
+	border-top-left-radius: $radius;
+	border-bottom-left-radius: $radius;
+}
+
+@mixin border-radius-right($radius: $circle-border-radius) {
+	-webkit-border-top-right-radius: $radius;
+	-webkit-border-bottom-right-radius: $radius;
+	-moz-border-radius-topright: $radius;
+	-moz-border-radius-bottomright: $radius;
+	border-top-right-radius: $radius;
+	border-bottom-right-radius: $radius;
+}
+
+/* Button Corners */
+@mixin round-corners($round-corners) {
+  -moz-border-radius: $round-corners;
+  -webkit-border-radius: $round-corners;
+  -ms-border-radius: $round-corners;
+  border-radius: $round-corners;
+}
+
+/* Sidebar Boxes */
+@mixin border-color($border-color) {
+  border: 2px solid $border-color;
+}
+
+/* Padding */
+@mixin pad-bottom($margin: 50px) {
+	margin-bottom: $margin;
+}
+
+/*Clearfix */
+@mixin clearfix {
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}

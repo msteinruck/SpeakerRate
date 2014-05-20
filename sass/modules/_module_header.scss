@@ -1,9 +1,8 @@
 #header {
+	@include pie-clearfix;
 	background: $header-footer-bkg;
-	height: 30px;
-	padding: 10px 0;
+	padding: 4px 0;
 	width: 100%;
-
 	a {
 		color: $header-footer-links;
 	}
@@ -12,38 +11,134 @@
 	background: url(../images/logo.svg);
 	height: 30px;
 	display: block;
+	@include float-left;
+	margin-top: 5px;
 	text-indent: -9999px;
 	width: 183px;
 	background-size: 183px 30px;
-	float: left;
+}
+#header-wrap {
+	@include breakpoint($break2) {
+	width: 35%;
+	}
+	@include float-right;
+	overflow: auto;
+	width: 80%;
 }
 #reg-search {
-	float: left;
+	@include float-right;	
 	* {
-		float: left;
+		@include float-left;
+	}	
+	.reg {
+		line-height: 2.3em;
+		
+		li {
+			padding-right: 1em;
+		}
+	}
+	@include breakpoint($break1) {
+		display: none;
+	}
+}
+#search {
+	input[type="search"] {
+		@include border-radius-left;
+		background: $search;
+		border: none;
+		color: $white;
+		font: normal 100% $font-stack-light;
+		font-size: 100%;
+		outline: none;
+		padding: 8px 8px 7px 8px;
+		width: 250px;
+	}
+	input[type="submit"] {
+		outline: none;
+	}
+	.btn-search {
+		background: $search url(../images/icon-search.svg) center  no-repeat;
+		border: none;
+		cursor: pointer;
+		@include border-radius-right;
+		padding: 11px;
+		width: 40px;
 	}
 }
 #nav {
-	float: right;
+	@include breakpoint($break1) {
+		display: none;
+	}
+	@include float-right;
+	line-height: 2.4em;
+	padding-left: 9%;
 	text-transform: uppercase;
 	li {
-		float: left;
-		padding-right: 1em;
-		
+		@include float-left;
+		padding-right: 1em;	
+		a {
+			display: block;
+		}
 		li {
 			display: none;
 		} 
-	}
-	
+	}	
+	.nav-add {
+		position: relative;
+			a {		
+			&:after {
+				content: ' ';
+				height: 0;
+				position: absolute;
+				width: 0;
+				border-left: 5px solid transparent;
+				border-right: 5px solid transparent;
+				border-top: 5px solid $mediumgray;
+				top: 45%;
+				right: 0;
+				z-index: 1;
+				width: 0; 
+			}
+		}
+		a:hover {
+			&:after {
+				opacity: .6;
+			}
+		}
+	}	
 }
 
-#hero{
-	width: 100%;
-	height: 620px;
-	background: url(../images/hero-default.jpg) no-repeat center center fixed; 
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
-	background-size: cover;
-	border: 1px solid;
+#hamburger-menu {
+	display: none;
+	@include breakpoint($break2) {
+		display: block;
+		@include float-right;
+		line-height: 2.4em;
+		text-transform: uppercase;
+		
+		.menu {
+			padding-right: 30px;
+			position: relative;
+		}
+		.menu span {
+			top: 45%;
+			right: 0;
+		}
+				
+		.menu span, .menu span:before, .menu span:after {
+			background: $mediumgray;
+			cursor: pointer;
+			content: '';
+			display: block;
+			height: 2px;
+			position: absolute;
+			width: 18px;
+		}
+		.menu span:before {
+			top: -5px;
+		}
+		.menu span:after {
+			bottom: -5px; 
+		}
+	}
 }

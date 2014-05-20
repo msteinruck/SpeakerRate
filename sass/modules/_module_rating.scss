@@ -1,0 +1,21 @@
+#avg-rating {
+	@include float-left;
+	width: 50%;
+}
+
+#rate-talk {
+	background: $purple5;
+	color: $white;
+	@include float-right;
+	font: normal 100% $font-stack-light;
+	font-size: 2.8125em; /* 45pt */
+	height: 100%;
+	padding: 12% 5% 16% 5%;
+	text-align: center;
+	width: 40%;
+}
+
+.rate-prompt {
+	display: block;
+	padding-bottom: 30px;
+}

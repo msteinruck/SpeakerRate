@@ -1,0 +1,24 @@
+#photos {
+	@include pie-clearfix;
+	@include pad-bottom;
+	background-color: $darkblue;
+	position: relative;
+	img {
+		@include float-left;
+		width: 20%;
+	}
+	.blue-box {
+		text-align: center;
+		position: absolute;
+		bottom: 0;
+		right: 0;
+		height: 50%;
+		width: 20%;
+		
+		a {
+			color: $white;
+			display: block;
+			padding: 45% 0;
+		}
+	}
+}

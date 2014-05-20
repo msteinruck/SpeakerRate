@@ -1,0 +1,37 @@
+#footer {
+	background: $header-footer-bkg;
+	color: #5e5e5e;
+	font: normal 100% $font-stack-light;
+	padding: 30px 0;
+	text-align: center;
+	width: 100%;
+	.wrapper {
+		margin: 0 auto;
+		text-align: center;
+		width: 50%;
+	}
+	ul {
+		@include pie-clearfix;
+		display: block;
+		padding: 10px 0;
+		text-align: center;
+		width: 100%;
+		li {
+			display: inline-block;
+			padding: 0 20px;
+		}
+	}
+	#footer-nav {
+		font-size: 1.5em; /* 24pt / 16pt */
+	}
+	.pointless {
+		background: url(../images/pointless-logo.svg);
+		display: block;
+		margin: 35px auto 10px auto;
+		opacity: .3;
+		text-indent: -9999px;
+		height: 35px;
+		width: 245px;
+
+	}
+}

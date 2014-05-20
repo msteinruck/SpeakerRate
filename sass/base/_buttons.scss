@@ -1,0 +1,58 @@
+.btn {
+	text-transform: uppercase;
+	width: auto; 
+}
+.outline-gray {
+	border: 2px solid $mediumgray;
+}
+.outline-white {
+	border: 2px solid $white;
+}
+
+
+/* Button Colors */
+.btn-white {
+	color: $white;
+	text-decoration: none;
+}
+.btn-gray {
+	color: $mediumgray;
+	background: $white;
+}
+.btn-lightgreen {
+	background: $lightgreen;
+	border: 2px solid $lightgreen;
+	color: $white;
+	&:hover {
+		
+	};
+}
+.btn-mediumgreen {
+	background: $mediumgreen;
+	border: 2px solid $mediumgreen;
+	color: $white;
+	&:hover {
+		
+	};
+}	
+.btn-darkgreen {
+	background: $darkgreen;
+	border: 2px solid $darkgreen;
+	color: $white;
+	&:hover {
+		
+	};
+}
+/* Button Sizes */
+.btn-lrg {
+	@include round-corners(8px);
+	font: normal 100% $font-stack-reg;
+	font-size: .4em; /* 18pt / 45pt */
+	padding: 10% 15%;
+}
+
+.btn-medium {
+	@include round-corners(6px);
+	font-size: .875em;
+	padding: 6px 25px;
+}

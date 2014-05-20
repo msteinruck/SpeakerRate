@@ -1,0 +1,37 @@
+#past-talks {
+	@include pie-clearfix;
+	@include pad-bottom;
+	ul {
+		@include pie-clearfix;
+		li {
+			width: 100%;
+			margin-bottom: 20px;
+			@include float-left;
+			img {
+				@include float-left;
+				margin-right: 20px;
+			}
+		
+			ul li {
+				@include float-left;
+				margin-bottom: 5px;
+				width: 80%;
+				
+			}
+		}
+	}
+}
+
+.rating {
+	color: $white;
+	font-size: .825em;
+	padding: 3px 15px;
+	text-align: center;
+}
+
+.rating0 { background-color: $purple0}
+.rating1 { background-color: $purple1}
+.rating2 { background-color: $purple2}
+.rating3 { background-color: $purple3}
+.rating4 { background-color: $purple4}
+.rating5 { background-color: $purple5}

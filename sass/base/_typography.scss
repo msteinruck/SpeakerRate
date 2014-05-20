@@ -1,6 +1,48 @@
-@import "compass/css3";
- 
-@include font-face("Proxima Nova Reg", font-files("ProximaNova-Reg-webfont.ttf", "ProximaNova-Reg-webfont.eot", "ProximaNova-Reg-webfont.woff", "ProximaNova-Reg-webfont.svg"));
-@include font-face("Proxima Nova Sbold", font-files("ProximaNova-Sbold-webfont.ttf", "ProximaNova-Sbold-webfont.eot", "ProximaNova-Sbold-webfont.woff", "ProximaNova-Sbold-webfont.svg"));
+@include font-face("Proxima Nova Light", font-files("/Users/marksteinruck/speakerrate/fonts/ProximaNova-Light-webfont.ttf", "/Users/marksteinruck/speakerrate/fonts/ProximaNova-Light-webfont.eot", "/Users/marksteinruck/speakerrate/fonts/ProximaNova-Light-webfont.woff", "/Users/marksteinruck/speakerrate/fonts/ProximaNova-Light-webfont.svg")); 
+@include font-face("Proxima Nova Reg", font-files("/Users/marksteinruck/speakerrate/fonts/ProximaNova-Reg-webfont.ttf", "/Users/marksteinruck/speakerrate/fonts/ProximaNova-Reg-webfont.eot", "/Users/marksteinruck/speakerrate/fonts/ProximaNova-Reg-webfont.woff", "/Users/marksteinruck/speakerrate/fonts/ProximaNova-Reg-webfont.svg"));
+@include font-face("Proxima Nova Sbold", font-files("/Users/marksteinruck/speakerrate/fonts/ProximaNova-Sbold-webfont.ttf", "/Users/marksteinruck/speakerrate/fonts/ProximaNova-Sbold-webfont.eot", "/Users/marksteinruck/speakerrate/fonts/ProximaNova-Sbold-webfont.woff", "/Users/marksteinruck/speakerrate/fonts/ProximaNova-Sbold-webfont.svg"));
 
-$font-stack: "Proxima Nova Reg", Helvetica, sans-serif;
+$font-stack-light: "Proxima Nova Light", "Helvetica Light", sans-serif;
+$font-stack-reg: "Proxima Nova Reg", Helvetica, sans-serif;
+$font-stack-sbold: "Proxima Nova Sbold", Helvetica, sans-serif;
+
+
+/* Headings */
+h2, h3, h4, h5, h6 {
+	line-height: 2em;
+}
+h1 { 
+	font-size: 2.25em; /* 36px / 16px */ 
+}
+h2 { 
+	font-size: 1.5em; /* 24px / 16px */ 
+	font: normal $font-stack-sbold;
+	text-transform: uppercase;
+}
+h5 { 
+	font: normal 100% $font-stack-sbold;
+	margin-bottom: 10px;
+	text-transform: uppercase; 
+}
+
+h3 {
+	font-size: 1.25em; /* 20px / 16px */ 
+	font: normal $font-stack-sbold;
+}
+
+
+/* Links */
+a {
+	color: $darkblue;
+	text-decoration: none;
+	
+	&:hover {
+		
+	}
+}
+
+/* Paragraphs */
+p {
+	line-height: 1.6em;
+	margin-bottom: 1.2em;
+}
